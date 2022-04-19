@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="70px" height="15px" viewBox="0 0 70 15" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>blue-arrow</title>
+    <defs>
+        <polygon id="path-1" points="0 0 69.659 0 69.659 14.372 0 14.372"></polygon>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Artboard" transform="translate(-117.000000, -4813.000000)">
+            <g id="blue-arrow" transform="translate(117.000000, 4813.000000)">
+                <mask id="mask-2" fill="white">
+                    <use xlink:href="#path-1"></use>
+                </mask>
+                <g id="Clip-2"></g>
+                <path d="M1,8.1858 L59,8.1858 L59,13.3718 C59,13.7468 59.209,14.0898 59.542,14.2608 C59.875,14.4328 60.275,14.4038 60.581,14.1848 L69.24,7.9988 C69.503,7.8108 69.659,7.5078 69.659,7.1858 C69.659,6.8638 69.503,6.5598 69.24,6.3728 L60.581,0.1868 C60.408,0.0628 60.205,-0.0002 60,-0.0002 C59.844,-0.0002 59.687,0.0368 59.542,0.1108 C59.209,0.2818 59,0.6258 59,0.9998 L59,6.1858 L1,6.1858 C0.448,6.1858 0,6.6338 0,7.1858 C0,7.7378 0.448,8.1858 1,8.1858 L1,8.1858 Z M61,2.9428 L66.939,7.1858 L61,11.4288 L61,2.9428 Z" id="Fill-1" fill="#97D1DC" mask="url(#mask-2)"></path>
+            </g>
+        </g>
+    </g>
+</svg>

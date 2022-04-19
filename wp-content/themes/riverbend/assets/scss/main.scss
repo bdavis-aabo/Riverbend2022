@@ -1,0 +1,116 @@
+@import 'design';
+
+.body-wrapper { width: 100%; }
+.header { height: 80px; position: fixed; z-index: 100; top: 0; left: 0; right: 0;
+	.header-logo { position: absolute; left: 20px; top: 10px;
+		img { width: 120px; }
+	}
+	.contact-btn { position: absolute; right: 0; top: 0; padding: 15px 10px 15px 20px; font-weight: 500;
+		svg { padding-left: 8px; display: none; }
+	}
+}
+
+
+.homepage-section { display: flex; flex-wrap: wrap; justify-content: center; align-items: center;
+	.swiper {
+		.swiper-wrapper { height: 100vh;
+			.swiper-slide { text-align: center; display: flex; justify-content: center; align-items: center;
+				.heroimage-img { width: 100%; height: 100vh; object-fit: cover; object-position: center; }
+				.slide-text { position: absolute; left: 50%; top: 50%; transform: translate(-50%, -50%); color: $white; font-family: 'buket';
+					font-size: 48px; width: 80%;
+				}
+			}
+		}
+		.swiper-pagination { top: 60%;
+			.swiper-pagination-bullet { border: 1px solid $white; width: 15px; height: 15px; margin: 10px 0; background: transparent; opacity: 1;
+				&.swiper-pagination-bullet-active { background: $ltblue; }
+			}
+		}
+	}
+}
+
+
+.footer { position: fixed; bottom: 0; left: 0; right: 0; z-index: 100; max-width: 2300px; margin: 0 auto;
+	.footer-container { display: flex; flex-wrap: wrap; justify-content: center; align-items: center;
+		.footer-left,
+		.footer-right { flex-basis: 100%; text-align: center; color: $white; font-weight: 500; font-size: .9em; }
+		.footer-left { display: flex; flex-wrap: wrap; justify-content: center; align-items: center;
+			img { width: 40px; }
+			p { margin-bottom: 0; padding-left: 8px; }
+		}
+		.footer-right { text-transform: uppercase;
+			svg { padding-left: 15px; width: 40px;
+				#Artboard { fill: $white; }
+			}
+		}
+	}
+}
+
+
+/*** SMALL DEVICES : Landscape phones, 576px + ***/
+@media (min-width: 576px){
+
+}
+
+/*** IPHONE X : Landscape ***/
+@media only screen and (min-device-width: 375px) and (max-device-width: 812px) and (-webkit-device-pixel-ratio: 3)
+  and (orientation: landscape) {
+
+}
+
+/*** MEDIUM DEVICES : Tablets, 768px + ***/
+@media (min-width: 768px){
+	.header {
+		.header-logo { left: 40px;
+			img { width: 250px; }
+		}
+		.contact-btn { padding: 20px 35px; font-size: 1.1em;
+			svg { display: inline-block; }
+		}
+	}
+	.homepage-section {
+		.swiper {
+			.swiper-wrapper { height: 100vh;
+				.swiper-slide {
+					.slide-text { font-size: 60px; width: 65%; }
+				}
+			}
+			.swiper-pagination { top: 50%; right: 20px; }
+		}
+	}
+	.footer { display: flex; flex-wrap: wrap; justify-content: center; align-items: center;
+		.footer-container { flex-wrap: nowrap; width: 96%;
+			.footer-left,
+			.footer-right { flex-basis: 50%; }
+			.footer-left  { text-align: left; justify-content: flex-start; }
+			.footer-right { text-align: right; }
+		}
+	}
+}
+
+/*** LARGE DEVICES : Desktops, 992px and up ***/
+@media (min-width: 992px){
+	.homepage-section {
+		.swiper {
+			.swiper-wrapper {
+				.swiper-slide {
+					.slide-text { font-size: 96px;  }
+				}
+			}
+		}
+	}
+}
+
+/*** EXTRA LARGE DEVICES : Large Desktops, 1200px + ***/
+@media (min-width: 1200px){
+
+}
+
+@media (min-width: 2400px){
+	.body-wrapper { max-width: 2400px; margin: 0 auto; }
+	.header { width: 2400px; left: 50%; transform: translateX(-50%); }
+}
+
+/*
+:::::::::: CUSTOM MEDIA QUERIES IF NEEDED ::::::::::
+*/
